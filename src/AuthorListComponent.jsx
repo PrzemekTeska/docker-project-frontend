@@ -63,7 +63,7 @@ function BookListComponent(props) {
     }, [setAuthors])
 
     return (
-        <div id="containerBookingList">
+        <div id="containerAuthorList">
 
             <div id="modalContent">
 

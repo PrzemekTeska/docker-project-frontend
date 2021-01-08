@@ -75,7 +75,7 @@ function nameFormatter(cell, row) {
     }, [setBooks])
 
     return (
-        <div id="containerBookingList">
+        <div id="containerBookList">
 
             <div id="modalContent">
 
