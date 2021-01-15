@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+#search-bar-div {
+  /* text-align: center; */
+  width: 200px;
+  margin: auto;
+
+}
+
+#search-bar {
+  
+  margin-left: 200px;
+}
+
+#containerAuthorList, #containerBookList {
+  margin-top: 25px;
+  margin-bottom: 150px;
+}

@@ -16,8 +16,8 @@ class AuthorService {
         return axios.post(BOOK_API_BASE_URL, author);
     }
 
-    updateAuthor(author) {
-        return axios.put(BOOK_API_BASE_URL, author);
+    updateAuthor(author, id) {
+        return axios.put(BOOK_API_BASE_URL + "/" + id, author);
     }
 
     deleteAuthor(id) {
