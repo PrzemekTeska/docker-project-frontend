@@ -35,7 +35,7 @@ const UpdateAuthorModal = forwardRef((props, ref) => {
                 handleClose();
                 window.location.reload();
             }
-            else(alert("Server did not respond with status 201"))
+            else(alert("Server did not respond with status 200"))
         })
     };
 
