@@ -2,7 +2,7 @@ import React, { useState, forwardRef, useImperativeHandle } from "react";
 import { Modal, Button } from 'react-bootstrap'
 import AuthorService from "./AuthorService";
 
-const CreateAuthorModal = forwardRef((props, ref) => {
+const UpdateAuthorModal = forwardRef((props, ref) => {
 
     const [show, setShow] = useState(false);
     const [firstName, setFirstName] = useState();
@@ -51,7 +51,7 @@ const CreateAuthorModal = forwardRef((props, ref) => {
         <>
             <Modal centered={true} show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" >
                 <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter">Adding a new author</Modal.Title>
+                    <Modal.Title id="contained-modal-title-vcenter">Editing an author</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <form>
@@ -79,4 +79,4 @@ const CreateAuthorModal = forwardRef((props, ref) => {
 
 });
 
-export default CreateAuthorModal;
+export default UpdateAuthorModal;
