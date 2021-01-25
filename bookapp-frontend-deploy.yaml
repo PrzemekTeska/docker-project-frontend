@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: bookapp-frontend-deploy
+  name: bookapp-frontend-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bookapp-frontend-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: bookapp-frontend-deploy
+    spec:
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/labproj23/bookapp-frontend:latest
+        name: bookapp-frontend
+        ports:
+        - containerPort: 3000
+        resources: {}
+        envFrom:
+        - configMapRef:
+            name: bookapp-cmap
+status: {}
