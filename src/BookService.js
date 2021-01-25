@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const BOOK_API_BASE_URL = "http://localhost:8080/api/books";
+const {REACT_APP_URL} = process.env;
+
+const BOOK_API_BASE_URL = REACT_APP_URL+"/api/books";
 
 class BookService {
 
